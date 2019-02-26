@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto:900" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" integrity="sha256-8B1OaG0zT7uYA572S2xOxWACq9NXYPQ+U5kHPV1bJN4=" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+  <div class="flex-container centered-container-80 split-panel">
+    <div class="column">
+      <h1>
+        Hotel Name
+      </h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Quis assumenda facere earum ipsa dolorem! 
+        Quisquam hic ullam quod, delectus dolorum, harum voluptatem, 
+        ab non porro iusto nisi? Dolore, aliquam exercitationem?
+      </p>
+    </div>
+    <div class="column column-30 action-panel">
+      <div class="box">
+          <h2>
+            Rooms Available
+          </h2>
+          <div class="text-right" id="rooms-available">
+            36
+          </div>
+      </div>
+
+      <div class="box">
+          <h2>
+            Rooms Types
+          </h2>
+          <ul class="list-items" id="room-types">
+          </ul>
+      </div>
+
+      <button onclick="jwMarriot.bookHotelRoom()">
+        Book Hotel
+      </button>
+      Date to Book: <input id="book-date" type="date" />
+
+      Room Type:
+      <select id="room-type-dropdown">
+        <option>Any</option>
+      </select>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
